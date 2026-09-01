@@ -547,8 +547,14 @@ footer {
         gap: 12px;
     }
     header nav ul li a {
-        font-size: 0.65rem;
-        letter-spacing: 0.05em;
+        font-size: 0.7rem;
+        letter-spacing: 0.1em;
+    }
+    
+    /* Desativa animações no mobile para evitar elementos invisíveis */
+    .fade-up, .fade-in {
+        opacity: 1 !important;
+        transform: none !important;
     }
     
     .hero {
@@ -567,7 +573,7 @@ footer {
         margin-bottom: 1.5rem;
     }
     .hero-logo-main {
-        width: 150px !important; /* Muito menor para garantir que obedeça em telas pequenas */
+        width: 220px !important;
         height: auto;
         margin-left: 0;
         margin-right: auto;
