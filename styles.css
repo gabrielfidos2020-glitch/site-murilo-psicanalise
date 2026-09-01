@@ -343,16 +343,21 @@ nav a:hover, nav button:hover {
 /* Buttons */
 .btn-outline {
     display: inline-block;
-    padding: 1rem 3rem;
+    padding: 1rem 2.5rem;
     border: 1px solid var(--text-color);
-    background: transparent;
     color: var(--text-color);
-    font-family: var(--font-body);
+    text-decoration: none;
+    font-family: var(--font-sans);
     font-size: 0.85rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
-    cursor: pointer;
-    transition: var(--transition-medium);
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
 }
 
 .text-btn {
@@ -382,10 +387,12 @@ nav a:hover, nav button:hover {
 }
 
 .hero-logo-main {
-    max-width: 80%;
-    height: auto;
+    width: 320px;
+    height: 155px; /* Corta a parte de baixo do logo e foca no 'Psi A' */
+    object-fit: cover;
+    object-position: top center;
     display: block;
-    margin-left: -2%; /* slight visual adjustment */
+    margin-left: -1%; 
 }
 
 .hero-intro {
@@ -405,7 +412,7 @@ nav a:hover, nav button:hover {
 
 .hero-ctas {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     justify-content: center;
 }
 
