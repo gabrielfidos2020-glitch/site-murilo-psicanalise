@@ -151,13 +151,16 @@ a {
 .col-12 { grid-column: span 12; }
 
 /* Utility Spacing */
-.mb-small { margin-bottom: 1rem; }
-.mb-medium { margin-bottom: 3rem; }
-.mb-large { margin-bottom: 6rem; }
+.mb-micro { margin-bottom: 0.5rem; }
+.mb-small { margin-bottom: 2rem; }
+.mb-medium { margin-bottom: 4rem; }
+.mb-large { margin-bottom: 8rem; }
 .mb-huge { margin-bottom: 12rem; }
 .mt-small { margin-top: 1rem; }
+.mt-medium { margin-top: 3rem; }
 .mt-large { margin-top: 6rem; }
-.mt-huge { margin-top: 12rem; }
+.mt-huge { margin-top: 10rem; }
+.pt-large { padding-top: 8rem; }
 .d-block { display: block; }
 .text-center { text-align: center; }
 
@@ -251,23 +254,32 @@ header {
     width: 100%;
     padding: 2.5rem 5%;
     z-index: 100;
-    background: var(--wood-color);
-    color: var(--bg-color);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    transition: background 0.5s ease;
+    background: var(--bg-color); /* Fundo off-white */
+    transition: background 0.5s ease, padding 0.5s ease, box-shadow 0.5s ease;
 }
 
-/* Force light color for elements inside the brown header */
-header .wood-text {
-    color: var(--bg-color) !important;
+header.scrolled {
+    padding: 1rem 5%;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+}
+
+.header-logo {
+    height: 60px;
+    width: auto;
+    display: block;
 }
 
 header nav a {
-    color: var(--bg-color) !important;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease;
 }
 
-header nav a:hover, header nav button:hover {
-    opacity: 0.7;
+header nav a:hover {
+    opacity: 0.6;
 }
 
 .header-inner {
@@ -328,31 +340,37 @@ nav a:hover, nav button:hover {
 .hero {
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
     position: relative;
     overflow: hidden;
+    padding-top: 80px; /* offset for header */
 }
 
-.hero-text {
-    z-index: 2;
-    position: relative;
+.hero-content-row {
+    height: 100%;
+    align-items: center;
 }
 
-.hero-title {
-    font-size: clamp(4rem, 12vw, 9rem);
-    letter-spacing: 0.05em;
-    margin-bottom: 0.5rem;
+.hero-logo-main {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin-left: -2%; /* slight visual adjustment */
 }
 
-.hero-subtitle {
-    font-size: 1rem;
-    letter-spacing: 0.5em;
-    font-family: var(--font-body);
-    margin-bottom: 4rem;
+.hero-intro {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    line-height: 1.4;
     color: var(--text-color);
+    margin-bottom: 2rem;
+    max-width: 90%;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
 .hero-ctas {
@@ -402,6 +420,20 @@ nav a:hover, nav button:hover {
     margin-bottom: 0.2rem;
 }
 
+.footer-content p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-logo {
+    height: 40px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-social {
+}
+
 .contato-signature .sig-name {
     font-family: var(--font-heading);
     font-size: 1.8rem;
@@ -439,58 +471,79 @@ footer {
 .delay-1 { transition-delay: 0.3s; }
 .delay-2 { transition-delay: 0.6s; }
 
-/* Responsive */
-@media (max-width: 992px) {
-    .grid-row {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
+/* -------------------------------------
+   RESPONSIVO (MOBILE FIRST & TWEAKS)
+------------------------------------- */
+
+/* Max 1024px (Tablets) */
+@media (max-width: 1024px) {
+    .hero-intro {
+        font-size: 1.5rem;
+    }
+    .hero-logo-main {
+        max-width: 90%;
+    }
+}
+
+/* Max 768px (Mobile & Small Tablets) */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 5%;
+    }
+    .header-logo {
+        height: 45px;
+    }
+    header nav {
+        display: none; /* Simplificado para mobile, ou poderia ter menu hamburger */
+    }
+    
+    .hero {
+        height: auto;
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+    .hero-content-row .col-6,
+    .hero-content-row .col-5 {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .hero-logo-main {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .hero-intro {
+        font-size: 1.3rem;
+        max-width: 100%;
     }
     
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
         width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .grid-row {
+        flex-direction: column;
     }
     
-    .text-block {
-        text-align: center;
+    .reverse-mobile {
+        flex-direction: column-reverse;
+    }
+    
+    .mb-huge { margin-bottom: 5rem; }
+    .mb-large { margin-bottom: 3rem; }
+    .pt-large { padding-top: 3rem; }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+    .editorial-text {
+        font-size: 1.1rem;
+    }
+    
+    .border-left-wood {
         border-left: none;
         padding-left: 0;
-    }
-    
-    .wood-line {
-        margin: 1.5rem auto;
-    }
-    
-    .h-large { height: 50vh; }
-    
-    .tripe-gallery {
-        gap: 4rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .header-inner {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    
-    nav ul {
-        gap: 1.5rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .hero-ctas {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .editorial-text {
-        font-size: 1.4rem;
-    }
-    
-    .mb-huge { margin-bottom: 6rem; }
-    .mt-huge { margin-top: 6rem; }
     
     footer {
         flex-direction: column;

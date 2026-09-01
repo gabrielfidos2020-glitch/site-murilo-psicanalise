@@ -13,15 +13,17 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header>
+    <header class="header-light">
         <div class="header-inner">
             <div class="logo">
-                <a href="index.html" class="wood-text"><span class="placeholder-icon">[ ÍCONE ]</span></a>
+                <a href="index.html">
+                    <img src="logo-avant-garde.jpg" alt="Avant-Garde Psicanálise e Psicologia" class="header-logo">
+                </a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#consultorio">Consultório</a></li>
-                    <li><a href="#tripe">O Tripé</a></li>
+                    <li><a href="#o-espaco">O Espaço</a></li>
+                    <li><a href="#ambientes">Ambientes</a></li>
                     <li><a href="sobre.html" class="text-btn wood-text">Sobre Murilo</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
@@ -32,168 +34,118 @@
     <main>
         <!-- HERO -->
         <section class="hero" id="home">
-            <div class="hero-text fade-up">
-                <h1 class="hero-title wood-text">MURILO</h1>
-                <p class="hero-subtitle">PSICANÁLISE</p>
-                
-                <div class="hero-ctas">
-                    <a href="#contato" class="btn-outline wood-border">CONTATO</a>
-                    <a href="sobre.html" class="btn-outline wood-border">SOBRE MURILO</a>
+            <div class="container grid-row align-center hero-content-row">
+                <div class="col-6 hero-text fade-up">
+                    <img src="logo-avant-garde.jpg" alt="Avant-Garde Psicanálise e Psicologia" class="hero-logo-main mb-large">
+                    <p class="hero-intro">Um espaço dedicado à prática clínica em psicanálise e psicologia, concebido a partir de uma relação estrutural entre atendimento, estudo, arte e ambiente.</p>
+                    <div class="hero-actions mt-medium">
+                        <a href="#o-espaco" class="btn-outline wood-border">CONHEÇA O ESPAÇO</a>
+                        <a href="#contato" class="text-btn wood-text btn-contato">CONTATO</a>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5 fade-in parallax" data-speed="0.05">
+                    <div class="image-placeholder h-medium img-framed">
+                        <span>[ FOTOGRAFIA DISCRETA DO AMBIENTE ]</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- EDITORIAL NARRATIVE GRID -->
-        <section class="narrative container" id="consultorio">
+        <!-- NARRATIVE CONTAINER -->
+        <section class="narrative container">
             
-            <!-- 1. O AMBIENTE (A GRANDE IMAGEM DO ESPAÇO) -->
-            <div class="grid-row align-center mb-huge">
-                <div class="col-3 text-block fade-up scroll-anim">
-                    <span class="archival-label wood-text">01. O ESPAÇO</span>
-                    <h2 class="section-title wood-text mt-small">O CONSULTÓRIO</h2>
-                    <div class="wood-line"></div>
-                    <p class="editorial-text">O consultório é o lugar onde o trabalho analítico acontece.</p>
-                </div>
-                <div class="col-9 fade-in scroll-anim">
-                    <img src="consultorio.jpg" alt="Consultório de Psicanálise" class="real-image h-large img-framed">
-                </div>
-            </div>
-
-            <!-- 2. MATERIALIDADE (COURO, PAPEL, LUZ) -->
-            <div class="grid-row align-center mb-huge">
-                <div class="col-1"></div>
-                <div class="col-4 fade-in scroll-anim parallax" data-speed="0.04">
-                    <img src="diva.jpg" alt="Detalhe do divã e tapete" class="real-image h-small">
-                </div>
-                <div class="col-2"></div>
-                <div class="col-4 text-block fade-up scroll-anim border-left-wood">
-                    <p class="editorial-text">O lugar da palavra.</p>
+            <!-- O ESPAÇO -->
+            <div id="o-espaco" class="grid-row align-center mb-huge pt-large">
+                <div class="col-7 text-block fade-up scroll-anim">
+                    <span class="archival-label wood-text mb-small d-block">O ESPAÇO</span>
+                    <h2 class="section-title wood-text">Identidade e Prática Clínica</h2>
+                    <p class="editorial-text">O Avant-Garde constitui-se como um lugar de escuta e elaboração pautado pela tradição psicanalítica. O ambiente foi projetado para integrar a dimensão clínica à cultura de estudo que fundamenta o ofício desde Sigmund Freud.</p>
+                    <p class="editorial-text mt-small">A materialidade do espaço reflete diretamente essa proposta. O mobiliário clássico em madeira, a presença fundamental da biblioteca, o divã tradicional e a curadoria artística constroem uma atmosfera sóbria e intimamente ligada à história da psicanálise.</p>
                 </div>
                 <div class="col-1"></div>
-            </div>
-
-            <!-- 3. BIBLIOTECA & FREUD INTEGRADO -->
-            <div class="grid-row align-end mb-large mt-huge">
-                <div class="col-3 fade-in scroll-anim">
-                    <img src="livro.jpg" alt="Livro sobre a mesa" class="real-image h-medium">
-                </div>
-                <div class="col-5 fade-up scroll-anim text-center parallax" data-speed="-0.03">
-                    <span class="archival-label wood-text mb-small d-block">TRADIÇÃO</span>
-                    <!-- Imagem de Freud atuando como um quadro na estante -->
-                    <div class="freud-composition">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Sigmund_Freud_LIFE.jpg" alt="Sigmund Freud" class="real-image sepia-filter img-framed portrait-medium">
+                <div class="col-4 fade-in scroll-anim parallax" data-speed="-0.03">
+                    <div class="image-placeholder h-medium wood-tint">
+                        <span>[ DETALHE FÍSICO DO ESPAÇO (EX: LIVROS/MADEIRA) ]</span>
                     </div>
-                    <span class="caption wood-text">Freud permanece como uma das referências fundamentais do trabalho.</span>
                 </div>
-                <div class="col-4 fade-in scroll-anim">
-                    <img src="biblioteca.jpg" alt="Estantes da biblioteca" class="real-image h-large">
-                </div>
-            </div>
-            
-            <div class="grid-row mb-huge">
-                <div class="col-4"></div>
-                <div class="col-4 text-block text-center fade-up scroll-anim">
-                    <p class="editorial-text">Livros que acompanham a escuta.</p>
-                </div>
-                <div class="col-4"></div>
             </div>
 
-            <!-- 4. ARTE NO CONSULTÓRIO -->
-            <div class="grid-row align-center mb-large">
-                <div class="col-3 text-block fade-up scroll-anim">
-                    <span class="archival-label wood-text">ARTE</span>
-                    <p class="editorial-text mt-small">A arte também habita este espaço.</p>
+            <!-- OS AMBIENTES -->
+            <div id="ambientes" class="mb-huge pt-large">
+                <div class="text-center mb-large fade-up scroll-anim">
+                    <span class="archival-label wood-text mb-small d-block">OS AMBIENTES</span>
+                    <h2 class="section-title wood-text">Salas de Atendimento</h2>
                 </div>
-                <div class="col-1"></div>
-                <div class="col-8 fade-in scroll-anim parallax" data-speed="0.05">
-                    <div class="art-frame">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Van_Gogh_The_Olive_Trees..jpg/1280px-Van_Gogh_The_Olive_Trees..jpg" alt="Olive Trees, Vincent van Gogh" class="real-image dark-filter">
+
+                <!-- SALA 01 -->
+                <div class="grid-row align-center mb-huge room-block">
+                    <div class="col-5 fade-in scroll-anim">
+                        <div class="image-placeholder h-medium img-framed warm-tint">
+                            <span>[ FOTO DA SALA 01 COM QUADRO DE TARSILA DO AMARAL ]</span>
+                        </div>
                     </div>
-                    <span class="caption wood-text text-center">Vincent van Gogh — Olive Trees (1889)</span>
-                </div>
-            </div>
-
-            <div class="grid-row align-center mb-huge">
-                <div class="col-6 fade-in scroll-anim parallax" data-speed="-0.04">
-                    <div class="art-frame-small">
-                        <img src="almond_blossom.jpg" alt="Almond Blossom, Van Gogh" class="real-image sepia-filter">
+                    <div class="col-1"></div>
+                    <div class="col-6 text-block fade-up scroll-anim">
+                        <h3 class="room-title wood-text">Sala 01</h3>
+                        <p class="editorial-text">O primeiro ambiente do Avant-Garde caracteriza-se por sua configuração voltada ao conforto e rigor da palavra. A composição desta sala é marcada pela presença de obras de Tarsila do Amaral.</p>
+                        <p class="caption wood-text mt-small">Obras presentes: Reproduções do modernismo brasileiro.</p>
                     </div>
-                    <span class="caption wood-text">Vincent van Gogh — Amendoeira em Flor (1890)</span>
                 </div>
-                <div class="col-1"></div>
-                <div class="col-4 fade-in scroll-anim">
-                    <img src="luminaria.jpg" alt="Detalhe de luminária" class="real-image h-medium">
-                </div>
-                <div class="col-1"></div>
-            </div>
 
-            <!-- 5. O TRIPÉ -->
-            <div class="grid-row mb-large mt-huge" id="tripe">
-                <div class="col-3"></div>
-                <div class="col-6 text-center text-block fade-up scroll-anim">
-                    <h2 class="section-title wood-text mt-small">O TRIPÉ</h2>
-                    <div class="wood-line center"></div>
-                    <p class="editorial-text">Freud, Lacan e Sabina Spielrein constituem as referências fundamentais que orientam o trabalho.</p>
-                </div>
-                <div class="col-3"></div>
-            </div>
-
-            <div class="grid-row align-top mb-huge text-center tripe-gallery">
-                <div class="col-4 fade-up scroll-anim">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Sigmund_Freud_1926.jpg/400px-Sigmund_Freud_1926.jpg" alt="Freud" class="real-image sepia-filter portrait-small img-framed">
-                    <h3 class="tripe-name wood-text mt-small">FREUD</h3>
-                </div>
-                
-                <div class="col-4 fade-up scroll-anim delay-1">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Jacques_Lacan.jpg/400px-Jacques_Lacan.jpg" alt="Lacan" class="real-image grayscale portrait-small img-framed">
-                    <h3 class="tripe-name wood-text mt-small">LACAN</h3>
-                    <p class="tripe-desc mt-small">Lacan integra as referências que orientam a prática.</p>
-                </div>
-                
-                <div class="col-4 fade-up scroll-anim delay-2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Sabina_Spielrein.jpg/400px-Sabina_Spielrein.jpg" alt="Sabina Spielrein" class="real-image sepia-filter portrait-small img-framed">
-                    <h3 class="tripe-name wood-text mt-small">SPIELREIN</h3>
-                    <p class="tripe-desc mt-small">Sabina Spielrein integra o campo de referências que sustenta o trabalho.</p>
+                <!-- SALA 02 -->
+                <div class="grid-row align-center room-block reverse-mobile mb-huge">
+                    <div class="col-6 text-block fade-up scroll-anim border-left-wood">
+                        <h3 class="room-title wood-text">Sala 02</h3>
+                        <p class="editorial-text">O segundo ambiente sustenta a prática clínica alinhada a uma estética de contemplação, marcado pela presença de reproduções de Vincent van Gogh, integrando a atmosfera do espaço à expressão artística pós-impressionista.</p>
+                        <ul class="caption-list wood-text mt-small" style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.5rem; font-size: 0.85rem; letter-spacing: 0.05em;">Ramos de amendoeira em flor (1890)</li>
+                            <li style="font-size: 0.85rem; letter-spacing: 0.05em;">Noite Estrelada sobre o Ródano (1888)</li>
+                        </ul>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-5 fade-in scroll-anim parallax" data-speed="0.04">
+                        <div class="image-placeholder h-medium img-framed wood-tint">
+                            <span>[ FOTO DA SALA 02 COM QUADRO DE VAN GOGH ]</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="wood-divider fade-in scroll-anim mb-huge"></div>
 
-            <!-- 6. ENCERRAMENTO E CONTATO -->
-            <div class="grid-row align-center mb-huge" id="contato">
+            <!-- CONTATO -->
+            <div id="contato" class="grid-row align-center mb-huge pt-large">
                 <div class="col-2"></div>
                 <div class="col-4 fade-in scroll-anim parallax" data-speed="-0.02">
-                    <!-- Detalhe arquitetônico de saída -->
-                    <img src="porta.jpg" alt="Detalhe do consultório" class="real-image img-framed h-small">
+                    <div class="image-placeholder h-small wood-tint img-framed">
+                        <span>[ PEQUENA FOTO DE ENCERRAMENTO ]</span>
+                    </div>
                 </div>
                 <div class="col-1"></div>
                 <div class="col-4 text-block fade-up scroll-anim border-left-wood">
                     <h2 class="section-title wood-text mb-small">CONTATO</h2>
-                    <p class="editorial-text mb-medium">Para informações sobre o consultório e os atendimentos:</p>
+                    <p class="editorial-text mb-small">Para informações sobre o atendimento e funcionamento do espaço.</p>
                     
-                    <div class="contato-links">
-                        <a href="#" class="contato-link wood-text">[ WHATSAPP ]</a>
-                        <a href="mailto:email@placeholder.com" class="contato-link wood-text">[ E-MAIL ]</a>
-                        <span class="contato-link wood-text" style="pointer-events: none;">[ LOCALIZAÇÃO ]</span>
+                    <div class="contact-details mt-medium mb-medium">
+                        <p class="font-weight-500 mb-micro" style="font-family: var(--font-sans); font-size: 0.95rem;">Avant-Garde — Psicanálise & Psicologia</p>
+                        <p class="text-light mb-micro" style="font-family: var(--font-sans); font-size: 0.9rem;">[ Endereço completo do espaço ]</p>
+                        <p class="text-light mb-micro mt-small" style="font-family: var(--font-sans); font-size: 0.9rem;">[ WhatsApp: +55 00 00000-0000 ]</p>
+                        <p class="text-light mb-micro" style="font-family: var(--font-sans); font-size: 0.9rem;">[ contato@avantgarde.com.br ]</p>
                     </div>
-                    
-                    <div class="contato-signature mt-large">
-                        <p class="sig-clinic">[ NOME DA CLÍNICA ]</p>
-                        <p class="sig-name wood-text">MURILO</p>
-                    </div>
+
+                    <a href="#" class="btn-outline wood-border">ENTRAR EM CONTATO</a>
                 </div>
                 <div class="col-1"></div>
             </div>
-
         </section>
     </main>
 
     <!-- FOOTER -->
     <footer>
         <div class="footer-content">
-            <p>[ NOME DA CLÍNICA ]</p>
-            <p class="wood-text">MURILO · PSICANÁLISE</p>
-            <p>&copy; 2026</p>
+            <img src="logo-avant-garde.jpg" alt="Avant-Garde" class="footer-logo mb-small">
+            <p class="wood-text" style="letter-spacing: 0.1em; font-family: var(--font-sans); font-size: 0.85rem; margin-top: 1rem;">PSICANÁLISE & PSICOLOGIA</p>
         </div>
     </footer>
 
