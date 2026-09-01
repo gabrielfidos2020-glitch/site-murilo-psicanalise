@@ -541,20 +541,39 @@ footer {
         padding-top: 120px;
         padding-bottom: 60px;
     }
-    .hero-content-row .col-6,
-    .hero-content-row .col-5 {
+    .hero-content-row [class*="col-"] {
         width: 100%;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
     .hero-logo-main {
         max-width: 100%;
         margin-left: 0;
     }
     .hero-intro {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         max-width: 100%;
     }
     
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .btn-outline {
+        width: 100%;
+        text-align: center;
+        padding: 1.2rem;
+    }
+    
+    .hero-img-wrapper {
+        height: 40vh; /* Mais contido no mobile */
+    }
+    
+    .h-medium {
+        height: 300px !important;
+    }
+
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
         width: 100%;
         margin-left: 0;
@@ -563,39 +582,36 @@ footer {
 
     .grid-row {
         flex-direction: column;
+        gap: 1.5rem;
     }
     
     .reverse-mobile {
         flex-direction: column-reverse;
     }
     
-    .mb-huge { margin-bottom: 5rem; }
-    .mb-large { margin-bottom: 3rem; }
-    .pt-large { padding-top: 3rem; }
+    .mb-huge { margin-bottom: 4rem; }
+    .mb-large { margin-bottom: 2.5rem; }
+    .pt-large { padding-top: 2.5rem; }
     
     .section-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.1;
     }
     .editorial-text {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
     
     .border-left-wood {
         border-left: none;
         padding-left: 0;
         border-top: 1px solid rgba(0,0,0,0.1);
-        padding-top: 2rem;
-        margin-top: 2rem;
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
     }
     
     footer {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
-    }
-    
-    .hero-rug-texture {
-        mask-image: radial-gradient(ellipse at bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 70%);
-        -webkit-mask-image: radial-gradient(ellipse at bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 70%);
     }
 }
