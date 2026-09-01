@@ -556,6 +556,12 @@ footer {
         padding-top: 100px;
         padding-bottom: 40px;
     }
+    
+    /* Esconde colunas vazias no mobile para não gerar buracos e saltos estranhos */
+    .col-1:empty, .col-2:empty {
+        display: none !important;
+    }
+
     .hero-content-row [class*="col-"] {
         width: 100%;
         margin-bottom: 1.5rem;
@@ -590,6 +596,10 @@ footer {
     }
     
     .h-medium {
+        height: 220px !important;
+    }
+    
+    .detail-img-small {
         height: 220px !important;
     }
 
