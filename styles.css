@@ -35,7 +35,9 @@ body {
 }
 
 /* Materiality & Wood Identity */
-.wood-text { color: var(--wood-color); }
+.wood-text {
+    color: var(--text-color);
+}
 
 .wood-border {
     border-color: var(--wood-color) !important;
@@ -187,6 +189,7 @@ a {
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease, filter 0.5s ease;
+    filter: contrast(1.08) saturate(1.15) brightness(0.98);
 }
 
 /* Photo Treatments */
