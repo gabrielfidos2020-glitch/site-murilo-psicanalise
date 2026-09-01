@@ -390,12 +390,11 @@ nav a:hover, nav button:hover {
 }
 
 .hero-logo-main {
-    width: 320px;
-    height: 155px; /* Corta a parte de baixo do logo e foca no 'Psi A' */
-    object-fit: cover;
-    object-position: top center;
+    width: 350px;
+    max-width: 100%;
+    height: auto;
     display: block;
-    margin-left: -1%; 
+    margin-bottom: 2rem;
 }
 
 .hero-intro {
@@ -584,6 +583,10 @@ footer {
     .border-left-wood {
         border-left: none;
         padding-left: 0;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        padding-top: 2rem;
+        margin-top: 2rem;
+    }
     
     footer {
         flex-direction: column;
