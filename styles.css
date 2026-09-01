@@ -567,8 +567,8 @@ footer {
         margin-bottom: 1.5rem;
     }
     .hero-logo-main {
-        width: 220px; /* Reduzido para não dominar a tela toda */
-        max-width: 100%;
+        width: 150px !important; /* Muito menor para garantir que obedeça em telas pequenas */
+        height: auto;
         margin-left: 0;
         margin-right: auto;
     }
