@@ -390,11 +390,11 @@ nav a:hover, nav button:hover {
 }
 
 .hero-logo-main {
-    width: 350px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 450px;
     height: auto;
     display: block;
-    margin-bottom: 2rem;
+    margin: 0 auto 2.5rem auto;
 }
 
 .hero-intro {
@@ -520,8 +520,12 @@ footer {
         font-size: 1.5rem;
     }
     .hero-logo-main {
-        max-width: 90%;
-    }
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin: 0 auto 2.5rem auto;
+}
 }
 
 /* Max 768px (Mobile & Small Tablets) */
@@ -533,7 +537,9 @@ footer {
         flex-wrap: wrap;
     }
     .header-logo-full {
-        height: 30px;
+        height: 40px;
+        width: auto;
+        display: block;
     }
     
     .mobile-menu-toggle {
@@ -575,9 +581,12 @@ footer {
     
     /* ABERTURA EDITORIAL MOBILE */
     .hero-typographic {
-        min-height: 60vh;
-        padding-top: 60px;
-    }
+    padding: 100px 5% 40px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+}
     .hero-title {
         font-size: 2.8rem;
         letter-spacing: 4px;
@@ -594,7 +603,8 @@ footer {
     /* NÚCLEOS MOBILE */
     .nucleos-grid {
         grid-template-columns: 1fr;
-        gap: 2.5rem;
+        gap: 2rem;
+        margin-top: 1rem;
     }
 
     /* Esconde colunas vazias no mobile para não gerar buracos e saltos estranhos */
@@ -673,7 +683,7 @@ footer {
 /* --- NOVA ESTRUTURA (AVANT-GARDE 2.0) --- */
 
 .header-logo-full {
-    height: 40px;
+    height: 55px;
     width: auto;
     display: block;
 }
@@ -683,11 +693,10 @@ footer {
 }
 
 .hero-typographic {
-    min-height: 80vh;
+    padding: 100px 5% 40px 5%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
     background-color: var(--bg-color);
 }
 
@@ -762,3 +771,5 @@ footer {
 
 /* Delay adicional para o fade-up */
 .delay-3 { transition-delay: 0.9s; }
+
+
