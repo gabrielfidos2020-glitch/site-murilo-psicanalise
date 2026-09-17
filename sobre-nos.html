@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Murilo | Psicanálise</title>
+    <title>Sobre Nós | Avant-Garde</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -12,16 +12,23 @@
 <body class="page-sobre">
     <!-- HEADER -->
     <header class="header-light">
-        <div class="header-inner">
+        <div class="header-inner container-fluid">
             <div class="logo">
                 <a href="index.html">
-                    <img src="logo-hero.png" alt="Avant-Garde Psicanálise e Psicologia" class="header-logo">
+                    <img src="logo-avant-garde.jpg" alt="Avant-Garde Psicanálise e Psicologia" class="header-logo-full">
                 </a>
             </div>
-            <nav>
+            
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="main-nav" id="main-nav">
                 <ul>
-                    <li><a href="index.html#o-espaco">O Espaço</a></li>
-                    <li><a href="sobre.html" class="text-btn">Sobre Murilo</a></li>
+                    <li><a href="index.html#grupo-estudos">Grupo de Estudos</a></li>
+                    <li><a href="sobre-nos.html" class="wood-text">Sobre Nós</a></li>
                     <li><a href="index.html#contato">Contato</a></li>
                 </ul>
             </nav>
@@ -29,8 +36,26 @@
     </header>
 
     <main>
+        <!-- INSTITUCIONAL AVANT-GARDE -->
         <section class="section-padding pt-large">
+            <div class="container text-center fade-up mb-huge">
+                <span class="archival-label wood-text mb-small d-block">SOBRE NÓS</span>
+                <h1 class="section-title wood-text mb-medium" style="font-size: 3rem;">Avant-Garde</h1>
+                <div class="portrait-medium" style="margin: 0 auto; max-width: 700px;">
+                    <p class="editorial-text mb-small" style="font-size: 1.1rem;">O Avant-Garde é um espaço institucional dedicado à psicanálise e à psicologia, estruturado a partir da articulação entre a clínica, a pesquisa e o aprofundamento teórico.</p>
+                    <p class="editorial-text" style="font-size: 1.1rem;">Nossa equipe reúne profissionais que compartilham o rigor acadêmico e a ética psicanalítica, operando tanto no atendimento clínico quanto na produção de conhecimento.</p>
+                </div>
+            </div>
+
+            <!-- PROFISSIONAIS -->
+            <div class="wood-divider fade-in scroll-anim mb-huge container"></div>
+            
             <div class="container">
+                <div class="text-center mb-large fade-up scroll-anim">
+                    <span class="archival-label wood-text mb-small d-block">EQUIPE</span>
+                    <h2 class="section-title wood-text">Profissionais</h2>
+                </div>
+
                 <div class="grid-row align-top">
                     <!-- FOTO DE MURILO -->
                     <div class="col-4 fade-in">
@@ -39,10 +64,9 @@
                     
                     <div class="col-1"></div>
                     
-                    <!-- CONTEÚDO INSTITUCIONAL -->
+                    <!-- CONTEÚDO MURILO -->
                     <div class="col-7 fade-up">
-                        <span class="archival-label wood-text mb-small d-block">SOBRE</span>
-                        <h1 class="section-title wood-text mb-micro">Murilo</h1>
+                        <h2 class="section-title wood-text mb-micro">Murilo</h2>
                         <p class="wood-text mb-medium" style="letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.85rem;">Psicanalista clínico e pesquisador</p>
                         
                         <div class="border-left-wood">
@@ -97,13 +121,8 @@
                                     <span class="wood-text" style="font-weight: 500; display: block;">2021 — 2022</span>
                                     <p class="text-light">Integrante do Laboratório de Extensão em Psicanálise e Arte (LEXPARTE) — FURG.</p>
                                 </div>
-                                <div class="curriculum-item mb-small">
-                                    <span class="wood-text" style="font-weight: 500; display: block;">2023</span>
-                                    <p class="text-light">Integrante do Fórum do Campo Lacaniano (FCL) — São Paulo.</p>
-                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

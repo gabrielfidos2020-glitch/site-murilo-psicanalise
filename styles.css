@@ -530,24 +530,40 @@ footer {
         padding: 1rem 5%;
     }
     .header-inner {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    .header-logo {
-        height: 35px;
-    }
-    header nav {
-        display: block;
-        width: 100%;
-    }
-    header nav ul {
-        display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
     }
-    header nav ul li a {
-        font-size: 0.7rem;
+    .header-logo-full {
+        height: 30px;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+    .mobile-menu-toggle span {
+        width: 25px;
+        height: 1px;
+        background-color: var(--text-color);
+        transition: all 0.3s ease;
+    }
+    
+    .main-nav {
+        display: none;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .main-nav.active {
+        display: block;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .main-nav ul li a {
+        font-size: 0.8rem;
         letter-spacing: 0.1em;
     }
     
@@ -557,31 +573,33 @@ footer {
         transform: none !important;
     }
     
-    .hero {
-        height: auto;
-        padding-top: 100px;
-        padding-bottom: 40px;
+    /* ABERTURA EDITORIAL MOBILE */
+    .hero-typographic {
+        min-height: 60vh;
+        padding-top: 60px;
+    }
+    .hero-title {
+        font-size: 2.8rem;
+        letter-spacing: 4px;
+    }
+    .hero-subtitle {
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        margin-bottom: 2rem;
+    }
+    .hero-statement {
+        font-size: 1.25rem;
     }
     
+    /* NÚCLEOS MOBILE */
+    .nucleos-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
     /* Esconde colunas vazias no mobile para não gerar buracos e saltos estranhos */
     .col-1:empty, .col-2:empty {
         display: none !important;
-    }
-
-    .hero-content-row [class*="col-"] {
-        width: 100%;
-        margin-bottom: 1.5rem;
-    }
-    .hero-logo-main {
-        width: 220px !important;
-        height: auto;
-        margin-left: 0;
-        margin-right: auto;
-    }
-    .hero-intro {
-        font-size: 1.05rem; /* Ajustado para acompanhar a logo menor */
-        max-width: 100%;
-        margin-bottom: 1.5rem;
     }
     
     .hero-actions {
@@ -652,3 +670,95 @@ footer {
         text-align: center;
     }
 }
+/* --- NOVA ESTRUTURA (AVANT-GARDE 2.0) --- */
+
+.header-logo-full {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.mobile-menu-toggle {
+    display: none;
+}
+
+.hero-typographic {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    background-color: var(--bg-color);
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 4.5rem;
+    letter-spacing: 6px;
+    margin-bottom: 0.2rem;
+}
+
+.hero-subtitle {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+}
+
+.hero-divider {
+    width: 60px;
+    height: 1px;
+    background-color: var(--wood-color);
+    margin: 0 auto 2.5rem auto;
+    opacity: 0.3;
+}
+
+.hero-statement {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+.nucleos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.nucleo-item {
+    text-align: center;
+    padding: 1rem;
+}
+
+.nucleo-icon {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.7;
+}
+
+.nucleo-title {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.nucleo-desc {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0 5%;
+}
+
+/* Delay adicional para o fade-up */
+.delay-3 { transition-delay: 0.9s; }

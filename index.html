@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Murilo | Psicanálise</title>
+    <title>Avant-Garde | Psicanálise & Psicologia</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,16 +14,23 @@
 <body>
     <!-- HEADER -->
     <header class="header-light">
-        <div class="header-inner">
+        <div class="header-inner container-fluid">
             <div class="logo">
                 <a href="#home">
-                    <img src="logo-hero.png" alt="Avant-Garde Psicanálise e Psicologia" class="header-logo">
+                    <img src="logo-avant-garde.jpg" alt="Avant-Garde Psicanálise e Psicologia" class="header-logo-full">
                 </a>
             </div>
-            <nav>
+            
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="main-nav" id="main-nav">
                 <ul>
-                    <li><a href="#o-espaco">O Espaço</a></li>
-                    <li><a href="sobre.html" class="text-btn">Sobre Murilo</a></li>
+                    <li><a href="#grupo-estudos">Grupo de Estudos</a></li>
+                    <li><a href="sobre-nos.html">Sobre Nós</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
@@ -31,44 +38,62 @@
     </header>
 
     <main>
-        <!-- HERO -->
-        <section class="hero" id="home">
-            <div class="container grid-row align-center hero-content-row">
-                <div class="col-7 hero-text fade-up">
-                    <img src="logo-avant-garde.jpg" alt="Avant-Garde Psicanálise e Psicologia" class="hero-logo-main">
-                    <p class="hero-intro">Um espaço dedicado à prática clínica em psicanálise e psicologia, concebido a partir de uma relação estrutural entre atendimento, estudo, arte e ambiente.</p>
-                    <div class="hero-actions mt-medium">
-                        <a href="#o-espaco" class="btn-outline">CONHEÇA O ESPAÇO</a>
-                        <a href="#contato" class="text-btn btn-contato">CONTATO</a>
-                    </div>
+        <!-- ABERTURA EDITORIAL -->
+        <section class="hero-typographic" id="home">
+            <div class="container text-center fade-up">
+                <h1 class="hero-title wood-text">AVANT-GARDE</h1>
+                <h2 class="hero-subtitle wood-text">Psicanálise & Psicologia</h2>
+                <div class="hero-divider"></div>
+                <p class="hero-statement wood-text">Prática clínica, estudo e pesquisa em psicanálise e psicologia.</p>
+            </div>
+        </section>
+
+        <!-- NÚCLEOS -->
+        <section class="nucleos container pt-large mb-huge">
+            <div class="nucleos-grid">
+                <!-- CLÍNICA -->
+                <div class="nucleo-item fade-up">
+                    <div class="nucleo-icon wood-text">⬩</div>
+                    <h3 class="nucleo-title wood-text">CLÍNICA</h3>
+                    <p class="nucleo-desc editorial-text">Prática clínica em psicanálise e psicologia.</p>
                 </div>
-                <div class="col-1"></div>
-                <div class="col-4 fade-in parallax" data-speed="0.05">
-                    <div class="image-wrapper hero-img-wrapper">
-                        <img src="foto-sala2.jpg" alt="Ambiente Avant-Garde" class="real-image hero-portrait-img">
-                    </div>
+                <!-- GRUPO DE ESTUDOS -->
+                <div class="nucleo-item fade-up delay-1">
+                    <div class="nucleo-icon wood-text">⬩</div>
+                    <h3 class="nucleo-title wood-text">GRUPO DE ESTUDOS</h3>
+                    <p class="nucleo-desc editorial-text">Encontros dedicados ao estudo e à discussão.</p>
+                </div>
+                <!-- PESQUISA -->
+                <div class="nucleo-item fade-up delay-2">
+                    <div class="nucleo-icon wood-text">⬩</div>
+                    <h3 class="nucleo-title wood-text">PESQUISA</h3>
+                    <p class="nucleo-desc editorial-text">Pesquisa e aprofundamento teórico.</p>
+                </div>
+                <!-- SOBRE NÓS -->
+                <div class="nucleo-item fade-up delay-3">
+                    <div class="nucleo-icon wood-text">⬩</div>
+                    <h3 class="nucleo-title wood-text">SOBRE NÓS</h3>
+                    <p class="nucleo-desc editorial-text">Os profissionais e a trajetória do Avant-Garde.</p>
                 </div>
             </div>
         </section>
 
-        <!-- NARRATIVE CONTAINER -->
+        <!-- O ESPAÇO -->
         <section class="narrative container">
-            
-            <!-- O ESPAÇO -->
             <div id="o-espaco" class="grid-row align-center mb-huge pt-large">
-                <div class="col-7 text-block fade-up scroll-anim">
+                <div class="col-6 text-block fade-up scroll-anim">
                     <span class="archival-label wood-text mb-small d-block">O ESPAÇO</span>
-                    <h2 class="section-title wood-text">Identidade e Prática Clínica</h2>
+                    <h2 class="section-title wood-text">Identidade e Tradição</h2>
                     <p class="editorial-text">O Avant-Garde constitui-se como um lugar de escuta e elaboração pautado pela tradição psicanalítica. O ambiente foi projetado para integrar a dimensão clínica à cultura de estudo que fundamenta o ofício desde Sigmund Freud.</p>
                     <p class="editorial-text mt-small">A materialidade do espaço reflete diretamente essa proposta. O mobiliário clássico em madeira, a presença fundamental da biblioteca, o divã tradicional e a curadoria artística constroem uma atmosfera sóbria e intimamente ligada à história da psicanálise.</p>
                 </div>
                 <div class="col-1"></div>
-                <div class="col-4 fade-in scroll-anim parallax" data-speed="-0.03">
-                    <img src="foto-estante.jpg" alt="Detalhe da biblioteca e tradição freudiana" class="real-image h-medium object-cover detail-img">
+                <div class="col-5 fade-in scroll-anim parallax" data-speed="0.03">
+                    <img src="foto-sala2.jpg" alt="Ambiente Avant-Garde" class="real-image h-medium object-cover detail-img">
                 </div>
             </div>
 
-            <!-- OS AMBIENTES -->
+            <!-- OS AMBIENTES (SALA 01 e 02) -->
             <div id="ambientes" class="mb-huge pt-large">
                 <div class="text-center mb-large fade-up scroll-anim">
                     <span class="archival-label wood-text mb-small d-block">OS AMBIENTES</span>
@@ -92,7 +117,7 @@
                 <div class="grid-row align-center room-block reverse-mobile mb-huge">
                     <div class="col-6 text-block fade-up scroll-anim border-left-wood">
                         <h3 class="room-title wood-text">Sala 02</h3>
-                        <p class="editorial-text">O segundo ambiente sustenta a prática clínica alinhada a uma estética de contemplação, marcado pela presença de reproduções de Vincent van Gogh, integrando a atmosfera do espaço à expression artística pós-impressionista.</p>
+                        <p class="editorial-text">O segundo ambiente sustenta a prática clínica alinhada a uma estética de contemplação, marcado pela presença de reproduções de Vincent van Gogh, integrando a atmosfera do espaço à expressão artística pós-impressionista.</p>
                         <ul class="caption-list wood-text mt-small" style="list-style: none; padding: 0;">
                             <li style="margin-bottom: 0.5rem; font-size: 0.85rem; letter-spacing: 0.05em;">Ramos de amendoeira em flor (1890)</li>
                             <li style="font-size: 0.85rem; letter-spacing: 0.05em;">Noite Estrelada sobre o Ródano (1888)</li>
@@ -103,6 +128,30 @@
                         <img src="almond_blossom.jpg" alt="Sala 02 - Van Gogh" class="real-image h-medium img-framed object-cover">
                     </div>
                 </div>
+            </div>
+
+            <div class="wood-divider fade-in scroll-anim mb-huge"></div>
+
+            <!-- GRUPO DE ESTUDOS SECTION -->
+            <div id="grupo-estudos" class="mb-huge pt-large text-center fade-up scroll-anim">
+                <span class="archival-label wood-text mb-small d-block">ESTUDO E DISCUSSÃO</span>
+                <h2 class="section-title wood-text mb-medium" style="font-size: 2.8rem;">Grupo de Estudos</h2>
+                <div class="portrait-medium mb-medium">
+                    <p class="editorial-text" style="font-size: 1.15rem;">Atividade coletiva dedicada ao aprofundamento e à investigação contínua dos fundamentos teóricos e clínicos da psicanálise.</p>
+                </div>
+                <a href="grupo-de-estudos.html" class="btn-outline">SAIBA MAIS</a>
+            </div>
+
+            <div class="wood-divider fade-in scroll-anim mb-huge"></div>
+
+            <!-- SOBRE NÓS SECTION -->
+            <div class="mb-huge pt-large text-center fade-up scroll-anim">
+                <span class="archival-label wood-text mb-small d-block">INSTITUCIONAL</span>
+                <h2 class="section-title wood-text mb-medium" style="font-size: 2.8rem;">Sobre Nós</h2>
+                <div class="portrait-medium mb-medium">
+                    <p class="editorial-text" style="font-size: 1.15rem;">Conheça a trajetória institucional do Avant-Garde e os profissionais que conduzem a prática clínica e a pesquisa.</p>
+                </div>
+                <a href="sobre-nos.html" class="btn-outline">CONHEÇA A EQUIPE</a>
             </div>
 
             <div class="wood-divider fade-in scroll-anim mb-huge"></div>
@@ -119,7 +168,7 @@
                     <p class="editorial-text mb-small">Para informações sobre o atendimento e funcionamento do espaço.</p>
                     
                     <div class="contact-details mt-medium mb-medium">
-                        <p class="font-weight-500 mb-micro" style="font-family: var(--font-sans); font-size: 0.95rem;">Avant-Garde — Psicanálise & Psicologia</p>
+                        <p class="font-weight-500 mb-micro" style="font-family: var(--font-sans); font-size: 0.95rem;">Avant-Garde - Psicanálise & Psicologia</p>
                         <p class="text-light mb-micro" style="font-family: var(--font-sans); font-size: 0.9rem;">[ Endereço completo do espaço ]</p>
                         <p class="text-light mb-micro mt-small" style="font-family: var(--font-sans); font-size: 0.9rem;">[ WhatsApp: +55 00 00000-0000 ]</p>
                         <p class="text-light mb-micro" style="font-family: var(--font-sans); font-size: 0.9rem;">[ contato@avantgarde.com.br ]</p>
