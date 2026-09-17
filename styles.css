@@ -809,3 +809,35 @@ footer {
 
 
 
+
+/* --- MOBILE OVERRIDES PARA A NOVA ESTRUTURA --- */
+@media (max-width: 768px) {
+    .header-logo-full {
+        height: 55px;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .hero-typographic {
+        padding: 100px 5% 30px 5%;
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .hero-statement {
+        font-size: 1.6rem;
+    }
+    
+    .nucleos-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
