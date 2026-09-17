@@ -19,6 +19,11 @@
     box-sizing: border-box;
 }
 
+/* Globals for visibility */
+.desktop-hidden {
+    display: none;
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -841,35 +846,141 @@ footer {
 
 /* --- MOBILE OVERRIDES PARA A NOVA ESTRUTURA --- */
 @media (max-width: 768px) {
+    .mobile-hidden {
+        display: none !important;
+    }
+    
+    .desktop-hidden {
+        display: flex !important;
+    }
+
+    /* COMPOSIÇÃO HEADER MOBILE EXCLUSIVA */
+    .header-inner {
+        position: relative !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        padding-top: 15px !important;
+        padding-bottom: 5px !important;
+        height: auto !important;
+    }
+    
+    .header-inner > .logo {
+        text-align: center !important;
+        width: 140px !important;
+        padding: 0 !important;
+        flex: none !important;
+        margin: 0 auto !important;
+        z-index: 10;
+    }
+    
     .header-logo-full {
-        height: 55px;
+        width: 100% !important;
+        max-width: 140px !important;
+        height: auto !important;
+        display: block !important;
     }
     
-    .mobile-menu-toggle {
-        display: flex;
+    .mobile-nav-side {
+        position: absolute !important;
+        top: 45% !important;
+        transform: translateY(-50%) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 6px !important;
+        z-index: 20;
     }
     
+    .mobile-nav-side.left {
+        left: 3% !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+    
+    .mobile-nav-side.right {
+        right: 3% !important;
+        align-items: flex-end !important;
+        text-align: right !important;
+    }
+    
+    .mobile-nav-side a {
+        font-family: var(--font-body) !important;
+        font-size: 9.5px !important;
+        letter-spacing: 0.1em !important;
+        text-transform: uppercase !important;
+        color: var(--text-color) !important;
+        font-weight: 500 !important;
+        line-height: 1.2 !important;
+        text-decoration: none !important;
+        opacity: 0.8;
+    }
+
+    /* Hero */
     .hero-typographic {
-        padding: 100px 5% 30px 5%;
-    }
-    
-    .hero-title {
-        font-size: 2.8rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 0.9rem;
+        padding: 40px 5% 30px 5% !important;
+        min-height: auto !important;
+        height: auto !important;
     }
     
     .hero-statement {
-        font-size: 1.6rem;
+        font-size: 1.35rem !important;
+        width: 95% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        line-height: 1.3 !important;
+    }
+
+    /* Núcleos */
+    .nucleos-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-top: 0 !important;
     }
     
-    .nucleos-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+    .nucleo-item {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        padding: 0 1rem !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Imagens e Containers */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Correção do overflow geral */
+    html, body {
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
+    }
+    
+    .grid-row {
+        flex-direction: column !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        gap: 1.5rem !important;
+        width: 100% !important;
+    }
+    
+    [class*="col-"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0 !important;
     }
 }
-
-
-

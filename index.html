@@ -12,25 +12,36 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- HEADER -->
+        <!-- HEADER -->
     <header class="header-light">
         <div class="header-inner container-fluid">
+            <!-- NAV MOBILE ESQUERDA -->
+            <nav class="mobile-nav-side left desktop-hidden">
+                <a href="#grupo-estudos">GRUPO DE<br>ESTUDOS</a>
+            </nav>
+
             <div class="logo">
                 <a href="#home">
-                    <img src="logo-avant-garde.jpg" alt="Avant-Garde PsicanÃ¡lise e Psicologia" class="header-logo-full">
+                    <img src="logo-avant-garde.jpg" alt="Avant-Garde Psicanálise e Psicologia" class="header-logo-full">
                 </a>
             </div>
+
+            <!-- NAV MOBILE DIREITA -->
+            <nav class="mobile-nav-side right desktop-hidden">
+                <a href="sobre-nos.html">SOBRE NÓS</a>
+                <a href="#contato">CONTATO</a>
+            </nav>
             
-            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+            <div class="mobile-menu-toggle mobile-hidden" id="mobile-menu-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
 
-            <nav class="main-nav" id="main-nav">
+            <nav class="main-nav mobile-hidden" id="main-nav">
                 <ul>
                     <li><a href="#grupo-estudos">Grupo de Estudos</a></li>
-                    <li><a href="sobre-nos.html">Sobre NÃ³s</a></li>
+                    <li><a href="sobre-nos.html">Sobre Nós</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
@@ -198,6 +209,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
