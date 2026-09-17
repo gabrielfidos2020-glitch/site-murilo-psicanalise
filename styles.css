@@ -537,7 +537,7 @@ footer {
         flex-wrap: wrap;
     }
     .header-logo-full {
-        height: 40px;
+        height: 55px;
         width: auto;
         display: block;
     }
@@ -581,7 +581,7 @@ footer {
     
     /* ABERTURA EDITORIAL MOBILE */
     .hero-typographic {
-    padding: 100px 5% 40px 5%;
+    padding: 140px 5% 60px 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -597,7 +597,7 @@ footer {
         margin-bottom: 2rem;
     }
     .hero-statement {
-        font-size: 1.25rem;
+        font-size: 1.6rem;
     }
     
     /* NÚCLEOS MOBILE */
@@ -683,7 +683,7 @@ footer {
 /* --- NOVA ESTRUTURA (AVANT-GARDE 2.0) --- */
 
 .header-logo-full {
-    height: 55px;
+    height: 70px;
     width: auto;
     display: block;
 }
@@ -693,7 +693,7 @@ footer {
 }
 
 .hero-typographic {
-    padding: 100px 5% 40px 5%;
+    padding: 140px 5% 60px 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -726,9 +726,9 @@ footer {
 
 .hero-statement {
     font-family: var(--font-heading);
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     font-style: italic;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     line-height: 1.4;
 }
@@ -772,4 +772,13 @@ footer {
 /* Delay adicional para o fade-up */
 .delay-3 { transition-delay: 0.9s; }
 
+
+
+.emoji-icon {
+    font-size: 2rem;
+    filter: grayscale(100%) brightness(0.2);
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
 
